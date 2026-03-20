@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mind On Crease – Better Cricket. Better Mindset. Better Player. Cricket skills, fitness, mindset and gear for young cricketers." />
+  <title>Mind On Crease – Better Cricket. Better Mindset. Better Player.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== POPUP ===================== -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-box">
+      <button class="popup-close" id="popupClose" aria-label="Close">&#10005;</button>
+      <div class="popup-badge">FREE DOWNLOAD</div>
+      <h2 class="popup-title">Level Up Your Game<br /><span>This Season</span></h2>
+      <p class="popup-sub">Get our free Cricket Performance Pack — practice planner, goal sheet & fitness tracker sent straight to your inbox.</p>
+      <form class="popup-form" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit" class="btn-primary">Send Me the Pack</button>
+      </form>
+      <p class="popup-trust">🔒 No spam. Join 4,000+ young cricketers.</p>
+    </div>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🏏</span>
+        <span class="logo-text">Mind On Crease</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Cricket Tips</a></li>
+          <li><a href="#fitness">Fitness</a></li>
+          <li><a href="#mindset">Mindset</a></li>
+          <li><a href="#gear">Gear</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#resources" class="btn-primary btn-nav-cta">Free Resources</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="dot"></span> India's Premier Cricket Performance Platform
+        </div>
+        <h1 class="hero-headline">
+          Train Your Mind.<br />
+          <span class="accent-text">Dominate</span> The Crease.
+        </h1>
+        <p class="hero-sub">
+          Practical cricket skills, mental toughness, fitness routines and smart gear guides — built for young players who are serious about becoming better cricketers.
+        </p>
+        <div class="hero-ctas">
+          <a href="#articles" class="btn-primary btn-large">Explore Articles</a>
+          <a href="#resources" class="btn-outline btn-large">Get Free Resources</a>
+        </div>
+        <div class="hero-trust-bar">
+          <div class="trust-item"><span class="trust-icon">🏏</span> Cricket Skills</div>
+          <div class="trust-item"><span class="trust-icon">💪</span> Fitness</div>
+          <div class="trust-item"><span class="trust-icon">🧠</span> Mindset</div>
+          <div class="trust-item"><span class="trust-icon">⭐</span> Gear Guides</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-main">
+          <div class="hero-stat-badge">
+            <span class="stat-num">4,000+</span>
+            <span class="stat-label">Cricketers Improving</span>
+          </div>
+          <div class="hero-field-graphic">
+            <svg viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="field-svg">
+              <circle cx="170" cy="170" r="160" stroke="rgba(132,204,22,0.15)" stroke-width="1.5"/>
+              <circle cx="170" cy="170" r="110" stroke="rgba(132,204,22,0.12)" stroke-width="1"/>
+              <circle cx="170" cy="170" r="60" stroke="rgba(132,204,22,0.2)" stroke-width="1.5"/>
+              <ellipse cx="170" cy="170" rx="18" ry="50" stroke="rgba(132,204,22,0.3)" stroke-width="1.5"/>
+              <line x1="10" y1="170" x2="330" y2="170" stroke="rgba(132,204,22,0.08)" stroke-width="1"/>
+              <line x1="170" y1="10" x2="170" y2="330" stroke="rgba(132,204,22,0.08)" stroke-width="1"/>
+              <!-- Cricket bat silhouette -->
+              <rect x="158" y="100" width="14" height="90" rx="7" fill="rgba(132,204,22,0.25)"/>
+              <rect x="155" y="185" width="20" height="45" rx="3" fill="rgba(132,204,22,0.35)"/>
+              <!-- Cricket ball -->
+              <circle cx="220" cy="130" r="14" fill="rgba(132,204,22,0.3)" stroke="rgba(132,204,22,0.6)" stroke-width="1.5"/>
+              <path d="M208 130 Q220 122 232 130" stroke="rgba(255,255,255,0.4)" stroke-width="1" fill="none"/>
+              <path d="M208 130 Q220 138 232 130" stroke="rgba(255,255,255,0.4)" stroke-width="1" fill="none"/>
+            </svg>
+          </div>
+          <div class="hero-pill-tags">
+            <span class="pill">Batting Drills</span>
+            <span class="pill">Mental Focus</span>
+            <span class="pill">Pre-match Routine</span>
+          </div>
+        </div>
+        <div class="hero-floating-card fc1">
+          <span class="fc-emoji">🎯</span>
+          <div>
+            <strong>Batting Avg</strong>
+            <small>Improve by 30%</small>
+          </div>
+        </div>
+        <div class="hero-floating-card fc2">
+          <span class="fc-emoji">📈</span>
+          <div>
+            <strong>New Article</strong>
+            <small>5-min Fielding Drill</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE TICKER ===================== -->
+  <div class="ticker-wrap">
+    <div class="ticker-inner">
+      <span>Batting Technique</span><span class="ticker-dot">◆</span>
+      <span>Bowling Variations</span><span class="ticker-dot">◆</span>
+      <span>Fitness for Cricketers</span><span class="ticker-dot">◆</span>
+      <span>Cricket Mindset</span><span class="ticker-dot">◆</span>
+      <span>Gear Reviews</span><span class="ticker-dot">◆</span>
+      <span>Match Preparation</span><span class="ticker-dot">◆</span>
+      <span>Free Practice Planners</span><span class="ticker-dot">◆</span>
+      <span>Young Cricketer's Guide</span><span class="ticker-dot">◆</span>
+      <span>Batting Technique</span><span class="ticker-dot">◆</span>
+      <span>Bowling Variations</span><span class="ticker-dot">◆</span>
+      <span>Fitness for Cricketers</span><span class="ticker-dot">◆</span>
+      <span>Cricket Mindset</span><span class="ticker-dot">◆</span>
+      <span>Gear Reviews</span><span class="ticker-dot">◆</span>
+      <span>Match Preparation</span><span class="ticker-dot">◆</span>
+      <span>Free Practice Planners</span><span class="ticker-dot">◆</span>
+      <span>Young Cricketer's Guide</span><span class="ticker-dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ===================== CATEGORIES ===================== -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">EXPLORE BY TOPIC</div>
+        <h2 class="section-title">What Do You Want<br />To Improve Today?</h2>
+      </div>
+      <div class="categories-grid">
+        <a href="#" class="cat-card cat-batting">
+          <div class="cat-icon-wrap">
+            <span class="cat-icon">🏏</span>
+          </div>
+          <div class="cat-content">
+            <span class="cat-label">Batting Tips</span>
+            <p class="cat-desc">Footwork, timing, shot selection & technique to score more runs consistently.</p>
+            <span class="cat-link">24 Articles →</span>
+          </div>
+          <div class="cat-hover-bg"></div>
+        </a>
+        <a href="#" class="cat-card cat-bowling">
+          <div class="cat-icon-wrap">
+            <span class="cat-icon">⚾</span>
+          </div>
+          <div class="cat-content">
+            <span class="cat-label">Bowling Tips</span>
+            <p class="cat-desc">Line, length, swing, seam, spin and variations to take more wickets.</p>
+            <span class="cat-link">18 Articles →</span>
+          </div>
+          <div class="cat-hover-bg"></div>
+        </a>
+        <a href="#fitness" class="cat-card cat-fitness">
+          <div class="cat-icon-wrap">
+            <span class="cat-icon">💪</span>
+          </div>
+          <div class="cat-content">
+            <span class="cat-label">Fitness</span>
+            <p class="cat-desc">Strength, speed, agility and endurance programs designed for cricketers.</p>
+            <span class="cat-link">21 Articles →</span>
+          </div>
+          <div class="cat-hover-bg"></div>
+        </a>
+        <a href="#mindset" class="cat-card cat-mindset">
+          <div class="cat-icon-wrap">
+            <span class="cat-icon">🧠</span>
+          </div>
+          <div class="cat-content">
+            <span class="cat-label">Mindset</span>
+            <p class="cat-desc">Focus, pressure handling, confidence and mental routines for peak performance.</p>
+            <span class="cat-link">15 Articles →</span>
+          </div>
+          <div class="cat-hover-bg"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY MOC ===================== -->
+  <section class="section why-section" id="about">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-left">
+          <div class="section-eyebrow">WHY MIND ON CREASE</div>
+          <h2 class="section-title">Built for Players<br />Who Want to <span class="accent-text">Grow</span></h2>
+          <p class="why-desc">We don't just publish cricket news. Every article, guide, and resource on Mind On Crease is written with one goal — making you a smarter, stronger, and more confident cricketer.</p>
+          <a href="#articles" class="btn-primary">Start Reading</a>
+        </div>
+        <div class="why-right">
+          <div class="why-grid">
+            <div class="why-card">
+              <span class="why-icon">🎯</span>
+              <h4>Practical Advice</h4>
+              <p>No fluff. Every tip is actionable and ready to use in your next practice session.</p>
+            </div>
+            <div class="why-card">
+              <span class="why-icon">🌱</span>
+              <h4>Beginner Friendly</h4>
+              <p>Written clearly for school players, academy cricketers and passionate beginners.</p>
+            </div>
+            <div class="why-card">
+              <span class="why-icon">🧠</span>
+              <h4>Mindset + Skills</h4>
+              <p>We cover both technique and mental performance — the complete player approach.</p>
+            </div>
+            <div class="why-card">
+              <span class="why-icon">📈</span>
+              <h4>Performance Driven</h4>
+              <p>Everything here is focused on measurable improvement in your game.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED ARTICLES ===================== -->
+  <section class="section articles-section" id="articles">
+    <div class="container">
+      <div class="section-header section-header-row">
+        <div>
+          <div class="section-eyebrow">LATEST GUIDES</div>
+          <h2 class="section-title">Featured Articles</h2>
+        </div>
+        <a href="#" class="btn-outline">View All Articles →</a>
+      </div>
+      <div class="articles-grid">
+        <!-- Article 1 - Featured Large -->
+        <article class="article-card article-featured">
+          <div class="article-img-wrap">
+            <div class="article-img art-batting">
+              <div class="art-overlay"></div>
+              <span class="article-img-icon">🏏</span>
+            </div>
+            <span class="article-cat-badge badge-batting">Batting</span>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="meta-date">Dec 15, 2024</span>
+              <span class="meta-dot">·</span>
+              <span class="meta-read">8 min read</span>
+            </div>
+            <h3 class="article-title">How to Build a Pre-Innings Routine That Puts You in the Zone Every Time</h3>
+            <p class="article-excerpt">The best batters in the world don't rely on luck to get into form. They have a repeatable mental and physical warm-up process that activates confidence before they even face a ball.</p>
+            <a href="#" class="article-link">Read Full Guide →</a>
+          </div>
+        </article>
+        <!-- Article 2 -->
+        <article class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img art-bowling">
+              <span class="article-img-icon">⚾</span>
+            </div>
+            <span class="article-cat-badge badge-bowling">Bowling</span>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="meta-date">Dec 10, 2024</span>
+              <span class="meta-dot">·</span>
+              <span class="meta-read">6 min read</span>
+            </div>
+            <h3 class="article-title">5 Bowling Variations Every Medium Pacer Must Learn</h3>
+            <p class="article-excerpt">Add these deceptive variations to your bowling arsenal and become a more dangerous wicket-taker.</p>
+            <a href="#" class="article-link">Read Guide →</a>
+          </div>
+        </article>
+        <!-- Article 3 -->
+        <article class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img art-fitness">
+              <span class="article-img-icon">💪</span>
+            </div>
+            <span class="article-cat-badge badge-fitness">Fitness</span>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="meta-date">Dec 5, 2024</span>
+              <span class="meta-dot">·</span>
+              <span class="meta-read">7 min read</span>
+            </div>
+            <h3 class="article-title">The 30-Minute Cricket Fitness Workout You Can Do Without a Gym</h3>
+            <p class="article-excerpt">Build the strength, speed and endurance you need to perform at your best — no equipment required.</p>
+            <a href="#" class="article-link">Read Guide →</a>
+          </div>
+        </article>
+        <!-- Article 4 -->
+        <article class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img art-mindset">
+              <span class="article-img-icon">🧠</span>
+            </div>
+            <span class="article-cat-badge badge-mindset">Mindset</span>
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="meta-date">Nov 28, 2024</span>
+              <span class="meta-dot">·</span>
+              <span class="meta-read">5 min read</span>
+            </div>
+            <h3 class="article-title">How to Handle Pressure at the Crease Without Falling Apart</h3>
+            <p class="article-excerpt">Practical mental tools to stay calm, focused and in control when the match is on the line.</p>
+            <a href="#" class="article-link">Read Guide →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STAT STRIP ===================== -->
+  <section class="stat-strip">
+    <div class="container stat-strip-inner">
+      <div class="stat-item">
+        <span class="stat-big">4,200+</span>
+        <span class="stat-desc">Cricketers in the Community</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-big">78+</span>
+        <span class="stat-desc">Articles & Guides Published</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-big">12+</span>
+        <span class="stat-desc">Free Resources Available</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-big">100%</span>
+        <span class="stat-desc">Player-Focused Content</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FREE RESOURCES ===================== -->
+  <section class="section resources-section" id="resources">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">FREE DOWNLOADS</div>
+        <h2 class="section-title">Tools to Train Smarter</h2>
+        <p class="section-sub">Download free planners, trackers and guides designed for serious young cricketers. Enter your email to unlock instant access.</p>
+      </div>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon-wrap">
+            <span class="resource-icon">📋</span>
+          </div>
+          <div class="resource-badge">MOST POPULAR</div>
+          <h4 class="resource-title">Weekly Practice Planner</h4>
+          <p class="resource-desc">Structure your training week like a pro. Covers batting, bowling, fielding and fitness slots.</p>
+          <button class="btn-primary resource-btn" onclick="document.getElementById('popup').classList.add('active')">Free Download</button>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon-wrap">
+            <span class="resource-icon">📊</span>
+          </div>
+          <h4 class="resource-title">Match Performance Tracker</h4>
+          <p class="resource-desc">Track your runs, wickets, fielding and match performance over a full season to spot patterns.</p>
+          <button class="btn-primary resource-btn" onclick="document.getElementById('popup').classList.add('active')">Free Download</button>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon-wrap">
+            <span class="resource-icon">🎯</span>
+          </div>
+          <h4 class="resource-title">Cricket Goal Sheet</h4>
+          <p class="resource-desc">Set clear 30-day and season goals with this structured sheet — because ambition needs a plan.</p>
+          <button class="btn-primary resource-btn" onclick="document.getElementById('popup').classList.add('active')">Free Download</button>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon-wrap">
+            <span class="resource-icon">🏃</span>
+          </div>
+          <h4 class="resource-title">Cricket Fitness Routine</h4>
+          <p class="resource-desc">A 4-week bodyweight program built specifically for improving on-field cricket performance.</p>
+          <button class="btn-primary resource-btn" onclick="document.getElementById('popup').classList.add('active')">Free Download</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GEAR REVIEWS ===================== -->
+  <section class="section gear-section" id="gear">
+    <div class="container">
+      <div class="section-header section-header-row">
+        <div>
+          <div class="section-eyebrow">GEAR GUIDES</div>
+          <h2 class="section-title">Best Cricket Gear Reviewed</h2>
+        </div>
+        <a href="#" class="btn-outline">All Reviews →</a>
+      </div>
+      <div class="gear-grid">
+        <div class="gear-card">
+          <div class="gear-img-area art-gear1">
+            <span class="gear-img-icon">🏏</span>
+            <span class="gear-badge">Beginner Pick</span>
+          </div>
+          <div class="gear-body">
+            <span class="gear-cat">BATTING</span>
+            <h4 class="gear-name">Best Cricket Bat for Beginners 2024</h4>
+            <p class="gear-desc">Top picks for school players with the right weight, balance and value for money.</p>
+            <div class="gear-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-num">4.8/5</span>
+            </div>
+            <a href="#" class="btn-primary gear-btn">Read Review →</a>
+          </div>
+        </div>
+        <div class="gear-card">
+          <div class="gear-img-area art-gear2">
+            <span class="gear-img-icon">👟</span>
+            <span class="gear-badge gear-badge-top">Top Choice</span>
+          </div>
+          <div class="gear-body">
+            <span class="gear-cat">FOOTWEAR</span>
+            <h4 class="gear-name">Best Cricket Shoes for Fast Bowlers</h4>
+            <p class="gear-desc">Grip, support and comfort compared across the top brands for serious bowlers.</p>
+            <div class="gear-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-num">4.9/5</span>
+            </div>
+            <a href="#" class="btn-primary gear-btn">Read Review →</a>
+          </div>
+        </div>
+        <div class="gear-card">
+          <div class="gear-img-area art-gear3">
+            <span class="gear-img-icon">🧤</span>
+            <span class="gear-badge gear-badge-value">Best Value</span>
+          </div>
+          <div class="gear-body">
+            <span class="gear-cat">PROTECTION</span>
+            <h4 class="gear-name">Best Cricket Batting Gloves Under ₹1500</h4>
+            <p class="gear-desc">Protection, grip and comfort in your budget — honest reviews from a player's perspective.</p>
+            <div class="gear-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-num">4.5/5</span>
+            </div>
+            <a href="#" class="btn-primary gear-btn">Read Review →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EMAIL CTA ===================== -->
+  <section class="section email-cta-section" id="subscribe">
+    <div class="container">
+      <div class="email-cta-box">
+        <div class="email-cta-bg-pattern"></div>
+        <div class="email-cta-content">
+          <div class="section-eyebrow eyebrow-light">JOIN THE COMMUNITY</div>
+          <h2 class="email-cta-title">Ready to Become a<br /><span>Better Cricketer?</span></h2>
+          <p class="email-cta-sub">Get weekly cricket tips, free resources, gear guides and mindset tools delivered straight to your inbox. No spam. Cancel anytime.</p>
+          <form class="email-form" onsubmit="return false;">
+            <input type="email" placeholder="Enter your email address" required class="email-input" />
+            <button type="submit" class="btn-primary btn-large">Join Free →</button>
+          </form>
+          <p class="email-trust">🔒 Join 4,000+ cricketers already improving their game every week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">FROM THE COMMUNITY</div>
+        <h2 class="section-title">What Young Cricketers Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The pre-innings routine article completely changed how I prepare to bat. I scored my first half-century the very next match after applying it.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AR</div>
+            <div>
+              <strong>Arjun Rawat</strong>
+              <small>U-19 School Cricketer, Delhi</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card testi-card-accent">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Mind On Crease is the only cricket website that actually talks about the mental side of the game. The mindset articles are gold for academy players like me.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SK</div>
+            <div>
+              <strong>Siddharth Kumar</strong>
+              <small>Cricket Academy Player, Mumbai</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Downloaded the practice planner and finally have a proper structure to my training. My coach noticed the improvement within two weeks. Highly recommend.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PM</div>
+            <div>
+              <strong>Priya Mehta</strong>
+              <small>Women's Cricket Player, Pune</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Quote Block -->
+      <div class="cricket-quote-block">
+        <blockquote>
+          "The more I practise, the luckier I get."
+          <cite>— Player's Mindset</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="section final-cta-section">
+    <div class="container">
+      <div class="final-cta-inner">
+        <h2 class="final-cta-title">Your Better Cricket<br />Journey Starts <span class="accent-text">Now</span></h2>
+        <p class="final-cta-sub">Explore 78+ articles, download free resources, and start building the skills and mindset of a serious cricketer.</p>
+        <div class="final-cta-btns">
+          <a href="#articles" class="btn-primary btn-large">Explore All Articles</a>
+          <a href="#resources" class="btn-outline btn-large">Get Free Resources</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo footer-logo">
+            <span class="logo-icon">🏏</span>
+            <span class="logo-text">Mind On Crease</span>
+          </a>
+          <p class="footer-brand-desc">Better Cricket. Better Mindset. Better Player.<br />India's performance platform for young cricketers.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h5 class="footer-col-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">All Articles</a></li>
+            <li><a href="#">Free Resources</a></li>
+            <li><a href="#">Gear Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5 class="footer-col-title">Categories</h5>
+          <ul class="footer-links">
+            <li><a href="#">Batting Tips</a></li>
+            <li><a href="#">Bowling Tips</a></li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Mindset</a></li>
+            <li><a href="#">Match Preparation</a></li>
+            <li><a href="#">Gear Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h5 class="footer-col-title">Join the Community</h5>
+          <p class="footer-nl-desc">Weekly cricket improvement tips straight to your inbox.</p>
+          <form class="footer-form" onsubmit="return false;">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 Mind On Crease. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
+        <p class="footer-affiliate">This site may contain affiliate links. We only recommend gear we genuinely believe in.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
